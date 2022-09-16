@@ -1,0 +1,162 @@
+* {
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+}
+
+body {
+      background: #dbbdcd;
+}
+
+a, p {
+      text-align: center;
+      font-family: "Montserrat";
+      font-size: 2em;
+      color: #fff;
+}
+
+.wrapper {
+      min-width: 100vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+}
+.wrapper .grid__items {
+      display: -ms-grid;
+      display: grid;
+      gap: 60px;
+      -ms-grid-columns: minmax(300px, 350px) 60px minmax(300px, 350px) 60px minmax(300px, 350px);
+      grid-template-columns: repeat(3, minmax(300px, 350px));
+      -ms-grid-rows: minmax(400px, 450px) 60px minmax(400px, 450px) 60px minmax(400px, 450px) 60px minmax(400px, 450px) 60px minmax(400px, 450px) 60px minmax(400px, 450px);
+      grid-template-rows: repeat(6, minmax(400px, 450px));
+}
+.wrapper .grid__items > *:nth-child(1) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+}
+.wrapper .grid__items > *:nth-child(2) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+}
+.wrapper .grid__items > *:nth-child(3) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 5;
+}
+.wrapper .grid__items > *:nth-child(4) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+}
+.wrapper .grid__items > *:nth-child(5) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 3;
+}
+.wrapper .grid__items > *:nth-child(6) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+}
+.wrapper .grid__items > *:nth-child(7) {
+      -ms-grid-row: 5;
+      -ms-grid-column: 1;
+}
+.wrapper .grid__items > *:nth-child(8) {
+      -ms-grid-row: 5;
+      -ms-grid-column: 3;
+}
+.wrapper .grid__items > *:nth-child(9) {
+      -ms-grid-row: 5;
+      -ms-grid-column: 5;
+}
+.wrapper .grid__items > *:nth-child(10) {
+      -ms-grid-row: 7;
+      -ms-grid-column: 1;
+}
+.wrapper .grid__items > *:nth-child(11) {
+      -ms-grid-row: 7;
+      -ms-grid-column: 3;
+}
+.wrapper .grid__items > *:nth-child(12) {
+      -ms-grid-row: 7;
+      -ms-grid-column: 5;
+}
+.wrapper .grid__items > *:nth-child(13) {
+      -ms-grid-row: 9;
+      -ms-grid-column: 1;
+}
+.wrapper .grid__items > *:nth-child(14) {
+      -ms-grid-row: 9;
+      -ms-grid-column: 3;
+}
+.wrapper .grid__items > *:nth-child(15) {
+      -ms-grid-row: 9;
+      -ms-grid-column: 5;
+}
+.wrapper .grid__items > *:nth-child(16) {
+      -ms-grid-row: 11;
+      -ms-grid-column: 1;
+}
+.wrapper .grid__items > *:nth-child(17) {
+      -ms-grid-row: 11;
+      -ms-grid-column: 3;
+}
+.wrapper .grid__items > *:nth-child(18) {
+      -ms-grid-row: 11;
+      -ms-grid-column: 5;
+}
+
+.grid-item {
+      position: relative;
+      border: 2px solid #000;
+      border-radius: 15px;
+}
+.grid-item img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+}
+.grid-item p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+      .wrapper .grid__items {
+            display: -ms-grid;
+            display: grid;
+            gap: 60px;
+            -ms-grid-columns: minmax(300px, 350px);
+            grid-template-columns: repeat(1, minmax(300px, 350px));
+            -ms-grid-rows: minmax(400px, 450px) 60px minmax(400px, 450px) 60px minmax(400px, 450px) 60px minmax(400px, 450px) 60px minmax(400px, 450px) 60px minmax(400px, 450px);
+            grid-template-rows: repeat(6, minmax(400px, 450px));
+      }
+      .wrapper .grid__items > *:nth-child(1) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+      }
+      .wrapper .grid__items > *:nth-child(2) {
+            -ms-grid-row: 3;
+            -ms-grid-column: 1;
+      }
+      .wrapper .grid__items > *:nth-child(3) {
+            -ms-grid-row: 5;
+            -ms-grid-column: 1;
+      }
+      .wrapper .grid__items > *:nth-child(4) {
+            -ms-grid-row: 7;
+            -ms-grid-column: 1;
+      }
+      .wrapper .grid__items > *:nth-child(5) {
+            -ms-grid-row: 9;
+            -ms-grid-column: 1;
+      }
+      .wrapper .grid__items > *:nth-child(6) {
+            -ms-grid-row: 11;
+            -ms-grid-column: 1;
+      }
+}
